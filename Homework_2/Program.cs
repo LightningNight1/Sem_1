@@ -44,9 +44,9 @@ void task_15()
     int day = Convert.ToInt32(Console.ReadLine());
     if (day > 0 && day < 8)
         if (day == 6 || day == 7)
-            Console.WriteLine("Day off! (:");
+            Console.WriteLine("Day off! :)");
         else
-            Console.WriteLine("It's not a day off yet ):");
+            Console.WriteLine("It's not a day off yet :(");
     else
         Console.WriteLine("Invalid value");
 }
