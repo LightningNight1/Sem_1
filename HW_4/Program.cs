@@ -38,34 +38,39 @@ void Task_29()
 
     int size = 8;
     int[] array = new int[size];
-    Random random = new Random();
-    for (int i = 0; i < array.Length; i++)
-        array[i] = random.Next(-10, 10);
-
-    void Sorter(int[] array)
-    {
-        for (int i = 0; i < array.Length; i++)
-            for (int j = i; j < array.Length; j++)
-                if (Math.Abs(array[j]) < Math.Abs(array[i]))
-                {
-                    int temporary = array[j];
-                    array[j] = array[i];
-                    array[i] = temporary;
-                }
-    }
+    FillArray(array);
     PrintArray(array);
     Sorter(array);
-
-    void PrintArray(int[] array)
-    {
-        Console.Write("[ ");
-        for (int i = 0; i < array.Length; i++)
-            if (i < array.Length - 1)
-                Console.Write(array[i] + ", ");
-            else
-                Console.Write(array[i]);
-        Console.WriteLine(" ]");
-    }
     PrintArray(array);
 }
-//Task_29();
+
+void FillArray(int[] array)
+{
+    Random random = new Random();
+    for (int i = 0; i < array.Length; i++)
+        array[i] = random.Next(-12, 13);
+}
+
+void Sorter(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        for (int j = i; j < array.Length; j++)
+            if (Math.Abs(array[j]) < Math.Abs(array[i]))
+            {
+                int temporary = array[j];
+                array[j] = array[i];
+                array[i] = temporary;
+            }
+}
+
+void PrintArray(int[] array)
+{
+    Console.Write("[ ");
+    for (int i = 0; i < array.Length; i++)
+        if (i < array.Length - 1)
+            Console.Write(array[i] + ", ");
+        else
+            Console.Write(array[i]);
+    Console.WriteLine(" ]");
+}
+Task_29();
