@@ -11,7 +11,7 @@
         expon *= numA;
     Console.WriteLine($"The result of exponentiation is {expon}");
 }
-Task_25();
+//Task_25();
 
 
 
@@ -31,7 +31,7 @@ void Task_27()
 
 
 
-void Task_29_1()
+void Task_29()
 {
     //Задача 29: Напишите программу, которая задаёт массив из 8 случайных целых чисел и выводит
     // отсортированный по модулю массив.
@@ -68,4 +68,4 @@ void Task_29_1()
     }
     PrintArray(array);
 }
-//Task_29_1();
+//Task_29();
