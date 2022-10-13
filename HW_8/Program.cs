@@ -109,6 +109,8 @@ void GetMinSumOfRow(int[,] numbers)
 //Task_58();
 void Task_58()
 {
+    //Задача 58: Заполните спирально массив 4 на 4 числами от 1 до 16.
+
     int n = 4;
     int[,] numbers = new int[n, n];
 
